@@ -1,0 +1,17 @@
+.big { background-color: #d6d8d5; padding: 12px; }
+
+.big .sh-big { width: 1200px; margin: 25px auto; background-color: white; padding-top: 12px; }
+
+.big .sh-big .text_ { border-left: 5px solid red; padding-left: 10px; font-size: 20px; }
+
+.big .sh-big ul { list-style: none; overflow: hidden; border-bottom: 1px dashed #918d8d; }
+
+.big .sh-big ul li { float: left; width: 14.75%; padding: 30px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.big .sh-big ul li img { margin: 13px; }
+
+.big .sh-big ul li p { color: #83817d; font-size: 14px; text-align: center; }
+
+.big .sh-big .wenzi { padding-bottom: 30px; border-bottom: 0px; }
+
+.big .sh-big .wenzi li { padding: 0; padding-top: 12px; }

@@ -1,0 +1,82 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background-color: rgb(238, 238, 234);
+}
+
+.big_zc {
+    width: 1080px;
+    margin: auto;
+    background-color: white;
+    padding: 20px 0px 100px;
+
+    .top_tit {
+        padding: 5px 10px;
+        border-left: 4px solid red;
+    }
+
+    .nr {
+        width: 40%;
+        margin: 50px auto 0px;
+
+        div {
+            // height: px;
+            width: 80%;
+            margin: 25px;
+
+            span {
+                position: absolute;
+                transform: translateX(-100%);
+                line-height: 40px;
+                padding-right: 5px;
+            }
+
+            input {
+                color: green;
+                font-size: 18px;
+                line-height: 30px;
+                border: 1px solid gray;
+                width: 100%;
+                padding: 8px 5px;
+                box-sizing: border-box;
+            }
+
+            button {
+                font-size: 18px;
+                color: green;
+                line-height: 30px;
+                padding: 8px;
+            }
+
+        }
+
+        .code,
+        .yz {
+            input {
+                width: 60%;
+            }
+
+            img {
+                float: right;
+            }
+
+            button {
+                float: right;
+            }
+        }
+
+
+        div.btn {
+            button.zcbtn {
+                width: 100%;
+                color: white;
+                background-color: red;
+                border-radius: 10px;
+                border: 0px;
+            }
+        }
+    }
+}

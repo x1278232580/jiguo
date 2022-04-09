@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/css/大众试用.css">
+</head>
+
+<body>
+    <div class="big_box">
+        <div class="kuwan">
+            <p>免费试用</p>
+            <ul class="ll1">
+                <li class="bottom-red ll">大众试用</li>
+                <li class="ll">体验师专享</li>
+            </ul>
+            <ul class="sl1">
+                <li class="sl color1">全部</li>
+                <li class="sl">申请中</li>
+                <li class="sl">试用中</li>
+                <li class="sl">已结束</li>
+            </ul>
+        </div>
+        <div class="shiyong">
+            <ul class="xuanran_">
+            </ul>
+        </div>
+        <div class="foot">
+            <p>没有更多了~</p>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="../js/js/渲染.js">
+</script>
+<script src="../js/js/template-web.js"></script>
+<script src="../js/js/jquery.min.js"></script>
+<script>
+    $(function () {
+        xuanran(1, 0, 0)
+        var lls = document.getElementsByClassName('ll');
+        var sls = document.getElementsByClassName('sl');
+        $(lls).on('click', function () {
+            for (var i = 0; i < lls.length; i++) {
+                $(this).addClass('bottom-red').siblings().removeClass('bottom-red');
+                xuanran($('.bottom-red').index(), $('.bottom-red').index(), $('.color1')
+                    .index())
+            }
+        })
+        $(sls).on('click', function () {
+            for (var j = 0; j < sls.length; j++) {
+                $(this).addClass('color1').siblings().removeClass('color1');
+                xuanran($('.bottom-red').index(), $('.bottom-red').index(), $('.color1')
+                    .index())
+            }
+        })
+    })
+</script>
+<script type="text/html" id="my">
+    {{each a}}
+    <li class="{{$value.class}}">
+        <a href="./试用产品详情.html">
+            <img src="{{$value.img}}" alt="">
+            <span class="{{$value.class}} xiaobiao">{{$value.info_ty}}</span>
+            <p class="title1">
+                {{$value.text}}
+            </p>
+            <div class="shul {{$value.sclass}}">{{$value.totalnum}}</div>
+            <div class="ts {{$value.sclass}}">{{$value.num}}台</div>
+            <p class="num">
+                {{$value.apply}}
+                <span>申请</span>
+            </p>
+            <p class="zuixiamian {{$value.sclass}}">
+                {{$value.text2}}
+            </p>
+            <div id="mb"></div>
+        </a>
+    </li>
+    {{/each}}
+</script>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/css/注册.css">
+</head>
+
+<body>
+    <div class="big_zc">
+        <div class="top_tit">注册极果</div>
+        <div class="nr">
+            <div class="user_"><span></span>
+                <input type="text" id="sjh">
+                <!-- <input type="text" placeholder='请输入登录手机号' id="sjh"> -->
+            </div>
+            <div class="code"><span></span>
+                <input type="text" placeholder='请输入图片验证码' id="img_code" maxlength="4"><img src="./img/img/imgCode.jpg"
+                    alt="">
+            </div>
+            <div class="yz"><span></span>
+                <input type="text" placeholder="请输入四位数字验证码" id="code" maxlength="4">
+                <button class="yzm">获取验证码</button>
+            </div>
+            <div class="user_name"><span>4-8位</span>
+                <input type="text" placeholder="请输入用户名" id="username">
+            </div>
+            <div class="psw"><span>6-12位</span>
+                <input type="password" placeholder="请输入新密码" id="psw1">
+            </div>
+            <div class="psw2"><span></span>
+                <input type="password" placeholder="确认新密码" id="psw2">
+            </div>
+            <div class="btn">
+                <button class="zcbtn" onclick="reg()">立即注册</button>
+            </div>
+            <div class="btn">
+                <button class="zcbtn" onclick="login()">立即登录</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<script src="./js/js/post.js"></script>
+<script src="./js/js/jquery.min.js"></script>
+<script>
+    var btn = document.getElementsByClassName('zcbtn');
+    var phone_reg = /^1[3|4|5|6|7|8|9]\d{9}$/g;
+    var username_reg = /^(\w|[\u4e00-\u9fa5]){4,8}$/g;
+    var pass_reg = /^\w{6,12}$/g;
+    btn[0].onclick = function () {
+        reg('users/register')
+    }
+    btn[1].onclick = function () {
+        reg('users/login')
+    }
+    $('#sjh').css('color', 'red')
+    $('#sjh').focusout(function () {
+        console.log($(this).val());
+        if (!phone_reg.test($(this).val())) {
+            $(this).parent().children('span').text('手机号格式不对')
+        } else {
+
+            $(this).parent().children('span').text('手机号格式正确')
+        }
+
+
+    })
+    $('#username').blur(function () {
+        console.log(username_reg.test($(this).val()));
+        if (username_reg.test($(this).val())) {
+            $(this).parent().children('span').text('用户名格式正确')
+            return true
+        } else {
+            $(this).parent().children('span').text('用户名格式不对')
+            return false
+        }
+
+
+    })
+    $('#psw1').focusout(function () {
+        console.log(pass_reg.test($(this).val()));
+        if (pass_reg.test($(this).val())) {
+            $(this).parent().children('span').text('密码格式正确')
+        } else {
+            $(this).parent().children('span').text('密码格式不对')
+
+        }
+
+
+    })
+    $('#psw2').focusout(function () {
+        console.log(pass_reg.test($(this).val()));
+        console.log($('#psw1').val());
+        console.log($(this).val());
+        console.log($(this).val() != $('#paw2').val());
+        if ($(this).val() != $('#paw1').val()) {
+            $(this).parent().children('span').text('重复密码不正确')
+        } else if ($(this).val() == $('#paw1').val()) {
+
+            $(this).parent().children('span').text('重复密码一致')
+        }
+
+
+    })
+</script>
