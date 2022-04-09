@@ -1,0 +1,116 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+.big-box {
+    background-color: rgb(228, 229, 226);
+    overflow: hidden;
+    padding: 0 100px;
+
+    #big {
+        width: 1200px;
+        margin: auto;
+        text-align: center;
+        overflow: hidden;
+
+        div {
+            float: left;
+        }
+
+        .big {
+            text-align: center;
+            background: white;
+            padding: 25px;
+            width: 60%;
+            margin-right: 35px;
+
+            p {
+                text-align: left;
+                margin-bottom: 20px;
+            }
+
+            img {
+                margin: 0px 0 20px;
+            }
+
+            .daogou-top {
+                width: 90%;
+                margin-right: 25px;
+                padding: 0 0px 25px;
+                border-bottom: 1px solid rgb(218, 209, 209);
+
+                h3 {
+                    font-size: 25px;
+                    text-align: left;
+                    line-height: 70px;
+                }
+
+                span {
+                    float: right;
+                    color: cadetblue;
+                }
+            }
+
+            .gangbi {
+                padding-top: 20px;
+            }
+
+            .tuijian {
+                span {
+                    float: left;
+                }
+            }
+
+            .shangxia {
+                margin: 20px 0;
+
+                p {
+                    margin: 0;
+                    color: blueviolet;
+                }
+            }
+        }
+
+        .xihuan,
+        .fenxiang {
+            width: 12%;
+            height: 120px;
+            padding: 31px 42px;
+            box-sizing: border-box;
+            background: white;
+            border: 1px solid rgb(218, 209, 209);
+            box-shadow: 5px 5px 5px rgb(218, 209, 209);
+        }
+
+        .xihuan:hover,
+        .fenxiang:hover {
+            color: red;
+
+
+
+        }
+
+        .color2 {
+            color: red;
+        }
+
+        .fenxiang {
+            position: relative;
+
+            div.tp {
+                margin: auto;
+            }
+
+            div.bshare {
+                position: absolute;
+                bottom: -15%;
+                left: 0px;
+                // transform: translateY(-100%);
+                width: 200px;
+                display: block;
+            }
+
+        }
+    }
+}

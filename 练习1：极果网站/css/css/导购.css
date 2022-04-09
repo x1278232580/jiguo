@@ -1,0 +1,39 @@
+* { padding: 0; margin: 0; }
+
+.big-box { background-color: #e4e5e2; overflow: hidden; padding: 0 100px; }
+
+.big-box #big { width: 1200px; margin: auto; text-align: center; overflow: hidden; }
+
+.big-box #big div { float: left; }
+
+.big-box #big .big { text-align: center; background: white; padding: 25px; width: 60%; margin-right: 35px; }
+
+.big-box #big .big p { text-align: left; margin-bottom: 20px; }
+
+.big-box #big .big img { margin: 0px 0 20px; }
+
+.big-box #big .big .daogou-top { width: 90%; margin-right: 25px; padding: 0 0px 25px; border-bottom: 1px solid #dad1d1; }
+
+.big-box #big .big .daogou-top h3 { font-size: 25px; text-align: left; line-height: 70px; }
+
+.big-box #big .big .daogou-top span { float: right; color: cadetblue; }
+
+.big-box #big .big .gangbi { padding-top: 20px; }
+
+.big-box #big .big .tuijian span { float: left; }
+
+.big-box #big .big .shangxia { margin: 20px 0; }
+
+.big-box #big .big .shangxia p { margin: 0; color: blueviolet; }
+
+.big-box #big .xihuan, .big-box #big .fenxiang { width: 12%; height: 120px; padding: 31px 42px; -webkit-box-sizing: border-box; box-sizing: border-box; background: white; border: 1px solid #dad1d1; -webkit-box-shadow: 5px 5px 5px #dad1d1; box-shadow: 5px 5px 5px #dad1d1; }
+
+.big-box #big .xihuan:hover, .big-box #big .fenxiang:hover { color: red; }
+
+.big-box #big .color2 { color: red; }
+
+.big-box #big .fenxiang { position: relative; }
+
+.big-box #big .fenxiang div.tp { margin: auto; }
+
+.big-box #big .fenxiang div.bshare { position: absolute; bottom: -15%; left: 0px; width: 200px; display: block; }

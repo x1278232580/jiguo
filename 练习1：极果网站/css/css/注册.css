@@ -1,0 +1,25 @@
+* { padding: 0; margin: 0; }
+
+body { background-color: #eeeeea; }
+
+.big_zc { width: 1080px; margin: auto; background-color: white; padding: 20px 0px 100px; }
+
+.big_zc .top_tit { padding: 5px 10px; border-left: 4px solid red; }
+
+.big_zc .nr { width: 40%; margin: 50px auto 0px; }
+
+.big_zc .nr div { width: 80%; margin: 25px; }
+
+.big_zc .nr div span { position: absolute; -webkit-transform: translateX(-100%); transform: translateX(-100%); line-height: 40px; padding-right: 5px; }
+
+.big_zc .nr div input { color: green; font-size: 18px; line-height: 30px; border: 1px solid gray; width: 100%; padding: 8px 5px; -webkit-box-sizing: border-box; box-sizing: border-box; }
+
+.big_zc .nr div button { font-size: 18px; color: green; line-height: 30px; padding: 8px; }
+
+.big_zc .nr .code input, .big_zc .nr .yz input { width: 60%; }
+
+.big_zc .nr .code img, .big_zc .nr .yz img { float: right; }
+
+.big_zc .nr .code button, .big_zc .nr .yz button { float: right; }
+
+.big_zc .nr div.btn button.zcbtn { width: 100%; color: white; background-color: red; border-radius: 10px; border: 0px; }
